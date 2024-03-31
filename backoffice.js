@@ -7,7 +7,7 @@ window.onload = async () => {
   if (id) {
     const res = await fetch(BASE_URL + id, {
       headers: {
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM3Zjc1YWM1Y2I2MjAwMTQzMDQ2MzgiLCJpYXQiOjE2ODEzODk0MDMsImV4cCI6MTY4MjU5OTAwM30.X8vcNHscCwbf38F9v8N9dADkt0E19x7HstOxfVfPIDg",
+        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA5YTlhNTQ2MTBmZDAwMTk4ZjAyNjYiLCJpYXQiOjE3MTE5MDkyODUsImV4cCI6MTcxMzExODg4NX0.6r6SoKLD1IY0vKavrHwMWRgSQEIYUPuGGXtfCutou2M",
       },
     });
     const product = await res.json();
@@ -35,7 +35,7 @@ const createNew = async () => {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM3Zjc1YWM1Y2I2MjAwMTQzMDQ2MzgiLCJpYXQiOjE2ODEzODk0MDMsImV4cCI6MTY4MjU5OTAwM30.X8vcNHscCwbf38F9v8N9dADkt0E19x7HstOxfVfPIDg",
+      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA5YTlhNTQ2MTBmZDAwMTk4ZjAyNjYiLCJpYXQiOjE3MTE5MDkyODUsImV4cCI6MTcxMzExODg4NX0.6r6SoKLD1IY0vKavrHwMWRgSQEIYUPuGGXtfCutou2M",
     },
     body: JSON.stringify(product),
   });
@@ -56,7 +56,7 @@ const editProduct = async () => {
     method: "PUT",
     headers: {
       "content-type": "application/json",
-      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM3Zjc1YWM1Y2I2MjAwMTQzMDQ2MzgiLCJpYXQiOjE2ODEzODk0MDMsImV4cCI6MTY4MjU5OTAwM30.X8vcNHscCwbf38F9v8N9dADkt0E19x7HstOxfVfPIDg",
+      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA5YTlhNTQ2MTBmZDAwMTk4ZjAyNjYiLCJpYXQiOjE3MTE5MDkyODUsImV4cCI6MTcxMzExODg4NX0.6r6SoKLD1IY0vKavrHwMWRgSQEIYUPuGGXtfCutou2M",
     },
     body: JSON.stringify(product),
   });
@@ -69,7 +69,7 @@ const deleteProduct = async () => {
   let res = await fetch(BASE_URL + id, {
     method: "DELETE",
     headers: {
-      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDM3Zjc1YWM1Y2I2MjAwMTQzMDQ2MzgiLCJpYXQiOjE2ODEzODk0MDMsImV4cCI6MTY4MjU5OTAwM30.X8vcNHscCwbf38F9v8N9dADkt0E19x7HstOxfVfPIDg",
+      Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA5YTlhNTQ2MTBmZDAwMTk4ZjAyNjYiLCJpYXQiOjE3MTE5MDkyODUsImV4cCI6MTcxMzExODg4NX0.6r6SoKLD1IY0vKavrHwMWRgSQEIYUPuGGXtfCutou2M",
     },
   });
   if (res.ok) {
